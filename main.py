@@ -2,6 +2,7 @@
 
 from pathlib import Path
 import pickle
+import sys
 
 def index_files(doc_folder: Path, index_pkl: Path, doc_id_pkl: Path):
     index_table = {}
@@ -80,7 +81,6 @@ def process_query(query, index_pkl, doc_id_pkl):
         index_table = pickle.load(pkl_file)
     with open(doc_id_pkl, "rb") as pkl_file:
         doc_dict = pickle.load(pkl_file)
-    query = query.split()
     if len(query) == 1:
         out = get_doc_ids_with_one_word(query[0], index_table, doc_dict)
     elif len(query) == 2:
@@ -90,14 +90,17 @@ def process_query(query, index_pkl, doc_id_pkl):
     return out
 
 def main():
-    doc_folder = Path("./documents_folder")
+    # doc_folder = Path("documents_folder")
+    # query = "the document"
+    query = sys.argv[1].split(",")
+    doc_folder = Path(sys.argv[2])
     index_pkl = Path("./index_table.pkl")
     doc_id_pkl = Path("./doc_ids.pkl")
     index_files(doc_folder, index_pkl, doc_id_pkl)
 
     # process query
-    query = "the document"
     output = process_query(query, index_pkl, doc_id_pkl)
+    # TODO: Separate indexing from query processing to prevent repeated indexing
     print(output)
 
 if __name__ == '__main__':

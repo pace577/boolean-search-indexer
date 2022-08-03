@@ -18,3 +18,16 @@ When a query is given to the indexer, it must
 
 * Testing
 For now, there is a folder called [[/home/prabhat/Programming/projects/boolean_search_indexer/documents_folder][documents_folder]] which contains 5 documents. Use that as testing material for indexing.
+
+* Execution
+#+begin_src bash
+python main.py query1,query2 documents_folder
+#+end_src
+
+For example, the following command will give the following result
+#+begin_src bash
+python main.py The,document documents_folder
+#+end_src
+
+#+RESULTS:
+| [PosixPath('documents_folder/d4.txt') | PosixPath('documents_folder/d5.txt')] |
