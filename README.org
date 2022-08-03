@@ -1,0 +1,20 @@
+#+title: Boolean Search Indexer
+
+This /boolean search indexer/ that I want to implement is sort of a mini search engine that can access documents in my computer and show me a list of files that match my results immediately.
+
+* Outline
+The indexer has to do the following initially:
+1. Take an input folder.
+2. For all file in the folder, create an dgap table (or a binary table?). Basically index them.
+   This has a few steps
+   a) Identify the document vocabulary (you have a table of words and corresponding doc ids).
+   b) Convert this into a dictionary format that has word as key and a list of doc ids as values.
+3. Store the index somewhere.
+
+When a query is given to the indexer, it must
+1. Read the index table.
+2. Process the query.
+3. Return the match.
+
+* Testing
+For now, there is a folder called [[/home/prabhat/Programming/projects/boolean_search_indexer/documents_folder][documents_folder]] which contains 5 documents. Use that as testing material for indexing.

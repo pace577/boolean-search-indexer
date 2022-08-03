@@ -1,0 +1,33 @@
+{
+    "id": "f0d14742-d3b5-4a40-9264-6011a81a9aa0",
+    "output": "This is the document 4.30 [1]:
+
+Chapter 3: The nature of the principle of self
+
+\u00a7 5.1. On the nature of the principle of self
+
+\u00a7 5.2. The nature; of necessity
+
+\u00a7 6.1. The nature of the concept of the thing
+
+\u00a7 6.2. The nature of the necessity, the principle of the thing, to its end
+
+\u00a7 6.3. On the nature of the concept of the thing
+
+\u00a7 6.4. On the nature of the concept of the thing
+
+\u00a7 6.5. On the nature of the concept of the thing
+
+\u00a7 6.6. The nature of the idea and the idea itself; of necessity and necessity-revision; of necessity and necessity on the principle of self
+ (\u00a7 6.19.1. The Idea that exists; of necessary and necessary necessity)
+
+\u00a7 6.20. The Idea that must be known; of necessity and necessity-revision; of necessity and necessity on the principle of self
+
+\u00a7 7. On principle of self
+
+\u00a7 8. On self-defence. On moral law
+
+This is the text from the work of Martin Bewke, The Concept of Necessity in Morality.
+
+This is one of those texts which, at last, has been given much study; to whom is meant our introduction in \u00a7 5.2, but which"
+}
